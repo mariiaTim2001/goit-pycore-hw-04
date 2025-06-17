@@ -7,7 +7,7 @@ def total_salary(path):
                     salary = float(line.strip().split(',')[1])
                     salaries.append(salary)
                 except (IndexError, ValueError):
-                    print(f"`Not correct format of line: {line.strip()}`")
+                    print(f"Not correct format of line: {line.strip()}")
                     continue
 
         total = sum(salaries)
