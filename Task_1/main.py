@@ -1,4 +1,4 @@
-def total_salary(path):
+def total_salary(path: str) -> tuple:
     try:
         with open(path, 'r', encoding='utf-8') as file:
             salaries = []

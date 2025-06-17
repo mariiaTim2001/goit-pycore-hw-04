@@ -1,4 +1,4 @@
-def get_cats_info(path):
+def get_cats_info(path: str) -> list:
     try:
         with open(path, 'r', encoding='utf-8') as file:
             cats = []
@@ -17,5 +17,5 @@ def get_cats_info(path):
         return []
 
 # Test case
-cats_info = get_cats_info("Task_2/file_cats.txt")
-print(cats_info)
+# cats_info = get_cats_info("Task_2/file_cats.txt")
+# print(cats_info)
