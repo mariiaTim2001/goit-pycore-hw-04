@@ -7,7 +7,7 @@ def total_salary(path: str) -> tuple:
                     salary = float(line.strip().split(',')[1])
                     salaries.append(salary)
                 except (IndexError, ValueError):
-                    print(f"Not correct format of line: {line.strip()}")
+                    print(f"\033[91mNot correct format of line: {line.strip()}\033[0m")
                     continue
 
         total = sum(salaries)
@@ -15,7 +15,7 @@ def total_salary(path: str) -> tuple:
         return total, average
 
     except FileNotFoundError:
-        print(f"File {path} does not exist.")
+        print(f"\033[91mFile {path} does not exist.\033[0m")
         return 0, 0
 
 

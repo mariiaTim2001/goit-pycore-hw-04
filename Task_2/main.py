@@ -7,13 +7,13 @@ def get_cats_info(path: str) -> list:
                     id, name, age = line.strip().split(',')
                     cats.append({'id': id, 'name': name, 'age': int(age)})
                 except (IndexError, ValueError):
-                    print(f"Not correct format of line: {line.strip()}")
+                    print(f"\033[91mNot correct format of line: {line.strip()}\033[0m")
                     continue
 
         return cats
 
     except FileNotFoundError:
-        print(f"File {path} does not exist.")
+        print(f"\033[91mFile {path} does not exist.\033[0m")
         return []
 
 # Test case
