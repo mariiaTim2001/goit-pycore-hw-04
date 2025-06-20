@@ -1,0 +1,11 @@
+def help():
+    print("\n" + "=" * 40)
+    print("📘 AVAILABLE COMMANDS".center(40))
+    print("=" * 40)
+    print("👉  hello                 - Greet the bot")
+    print("👉  add [name] [phone]    - Add a contact")
+    print("👉  change [name] [phone] - Change contact's phone")
+    print("👉  phone [name]          - Show phone by name")
+    print("👉  all                   - Show all contacts")
+    print("👉  exit / close          - Exit the assistant")
+    print("=" * 40 + "\n")
